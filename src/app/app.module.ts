@@ -22,6 +22,8 @@ import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {AuthInterceptor} from './services/auth.interceptor';
 import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { AddPostsComponent } from './components/add-posts/add-posts.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +42,8 @@ import { SignupComponent } from './components/signup/signup.component';
     HomeComponent,
     LoginComponent,
     SignupComponent,
+    NavbarComponent,
+    AddPostsComponent,
 
   ],
     imports: [

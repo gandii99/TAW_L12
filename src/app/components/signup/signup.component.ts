@@ -22,7 +22,7 @@ export class SignupComponent implements OnInit {
   }
 
   create() {
-    this.authService.createOrUpdate(this.credentials).subscribe((result) => {
+    this.authService.createOrUpdate(this.credentials).subscribe((result : Object) => {
       return result;
     });
     this.router.navigate(['/']);

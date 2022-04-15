@@ -7,6 +7,7 @@ import {HomeComponent} from "./components/home/home.component";
 import {AuthGuard} from "./services/auth.guard";
 import {LoginComponent} from "./components/login/login.component";
 import {SignupComponent} from "./components/signup/signup.component";
+import {AddPostsComponent} from "./components/add-posts/add-posts.component";
 
 const routes: Routes = [
   {
@@ -25,8 +26,15 @@ const routes: Routes = [
   {
     path: 'signup',
     component: SignupComponent
+  },
+  {
+    path: 'addpost',
+    component: AddPostsComponent
+  },
+  {
+    path: 'blog/detail/:id',
+    component: BlogItemDetailsComponent
   }
-
 
 
 

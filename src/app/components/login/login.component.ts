@@ -26,7 +26,7 @@ export class LoginComponent implements OnInit {
   }
 
   signIn() {
-    return this.authService.authenticate(this.credentials).subscribe((result) => {
+    return this.authService.authenticate(this.credentials).subscribe((result : boolean) => {
       if (!result) {
         this.logged = false;
       } else {
@@ -35,9 +35,10 @@ export class LoginComponent implements OnInit {
           login: '',
           password: ''
         };
-        this.router.navigate(['/']);
+        this.router.navigate(['/api/blog']);
       }
     });
   }
 
 }
+

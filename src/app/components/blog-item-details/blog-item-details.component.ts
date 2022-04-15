@@ -18,12 +18,14 @@ export class BlogItemDetailsComponent implements OnInit {
 
   ngOnInit() {
     let id: string = '';
+
     this.route.paramMap
       .subscribe((params: any) => {
         id = params.get('id');
       });
 
     this.service.getById(id).subscribe((res: any) => {
+      console.log(res)
       this.image = res['image'];
       this.text = res['text'];
     });
